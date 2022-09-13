@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
+//1.写公共接口
+//2.绑定服务提供者在eureka的名称
+
 @Component
 @FeignClient(value = "SPRINGCLOUD-PROVIDER-1")
 public interface UserService {
