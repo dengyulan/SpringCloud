@@ -26,6 +26,7 @@ public class UserController {
     @Autowired
     private LoadBalancerClient loadBalancerClient;
 
+    //调用公共接口，通过feign来远程访问
     @Autowired
     private UserService userService;
 
