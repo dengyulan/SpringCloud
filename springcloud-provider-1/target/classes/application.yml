@@ -1,0 +1,19 @@
+server:
+  port: 8001
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+spring:
+  application:
+    name: springcloud-provider-1
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mybatis?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 1Adengyulan
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8762/eureka/,http://localhost:8761/eureka/
