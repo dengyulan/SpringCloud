@@ -17,6 +17,9 @@ import java.util.List;
 @RestController
 public class UserController {
 
+    //测试专用
+    private int id = 1;
+
     @Autowired
 
     private RestTemplate restTemplate;
