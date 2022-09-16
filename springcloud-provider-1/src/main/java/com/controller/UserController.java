@@ -19,4 +19,9 @@ public class UserController {
     public List<User> queryAll(){
         return userService.queryAll();
     }
+
+    @GetMapping("/testFeign1")
+    public String testFeign(){
+        return "testFeign";
+    }
 }

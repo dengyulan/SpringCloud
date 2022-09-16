@@ -17,4 +17,7 @@ import java.util.List;
 public interface UserService {
     @RequestMapping("/user/query")
     List<User> queryAll();
+
+    @RequestMapping("/testFeign1")
+    String testFeign();
 }

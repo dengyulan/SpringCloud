@@ -31,6 +31,13 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+
+    @RequestMapping("/test")
+    public String testfei() {
+        return userService.testFeign();
+    }
+
+
     @RequestMapping("/consumer/get5")
     public List<User> get5(){
         return userService.queryAll();
